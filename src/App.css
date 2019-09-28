@@ -1,0 +1,13 @@
+﻿.PanelHeader-addon--brand,
+.PanelHeader-bg--brand,
+.PanelHeader-content--brand,
+.PanelHeader-left-in--brand,
+.PanelHeader-right--brand,
+.PanelHeader-SearchView.PanelHeader-bg--brand,
+.Search--android {
+  background: #1c7859
+}
+
+body {
+  background-color: #ffffff!important
+}
