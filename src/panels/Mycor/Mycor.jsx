@@ -1,4 +1,4 @@
-﻿import React, {useState} from 'react'
+﻿import React from 'react'
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
@@ -31,11 +31,11 @@ import TextileSVG from '../../icons/Textile.svg'
 import TextileSVG_act from '../../icons/Textile_act.svg'
 
 import './Mycor.css'
-import { Button, List, CellButton, Group } from '@vkontakte/vkui';
+import { Button, Group } from '@vkontakte/vkui';
 
 
-const typeIcon = { textAlign:'center', width:' 50%' }
-const center = { textAlign: 'center', display:'Block' }
+// const typeIcon = { textAlign:'center', width:' 50%' }
+// const center = { textAlign: 'center', display:'Block' }
 
  
 const TypeIcon = ({svg, svgActive, active, name, ...props})=> (

@@ -13,6 +13,7 @@ import connect from '@vkontakte/vk-connect-promise';
 import ReactSVG from 'react-svg';
 import Waste from '../icons/13_ico_Waste.svg'
 import Routes from '../icons/15_ico_Routes.svg'
+
 const Home = ({ id, go, fetchedUser }) => {
 	const [error, setError] = useState(null)
 	const skan = () => {

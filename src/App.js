@@ -4,12 +4,12 @@ import View from '@vkontakte/vkui/dist/components/View/View';
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
-import Persik from './panels/Persik';
-import Map from './panels/Map/map';
+import Persik from './panels/Persik/Persik';
 import Mycor from './panels/Mycor/Mycor';
 import Zavod from './panels/Zavod/Zavod';
 
 import './App.css'
+import MapWrapper from './panels/Map/MapWrapper';
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
@@ -50,7 +50,7 @@ const App = () => {
 		<View activePanel={activePanel} popout={popout}>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
 			<Persik id='persik' go={go} />
-			<Map id='map' go={go} selectedElem={selectedElem}/>
+			<MapWrapper id='map' go={go} selectedElem={selectedElem}/>
 			<Zavod id='zavod' zavodId={zavodId}/>
 			<Mycor id='SelectMycor' selectedElem={selectedElem} go={go} selectElem={selectElem}/>
 			

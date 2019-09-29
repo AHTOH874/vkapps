@@ -28,8 +28,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-yandex-maps": "latest",
-    "react-svg": "latest"
+    "react-svg": "^10.0.22",
+    "react-yandex-maps": "^4.0.1"
   },
   "browserslist": {
     "production": [
