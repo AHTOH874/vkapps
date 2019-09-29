@@ -51,12 +51,8 @@ const Home = ({ id, go, fetchedUser }) => {
 				<strong>Экоинициативы</strong>
 			</Cell>
 		</List>
-<Group title="Navigation Example">
-			<Cell>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Показать персика
-				</Button>
-			</Cell>
+<Group title="Навигация">
+
 			<Cell>
 				<Button size="xl" level="2" onClick={go} data-to="map">
 					Перейти к карте

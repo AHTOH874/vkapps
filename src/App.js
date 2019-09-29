@@ -10,8 +10,9 @@ import Zavod from './panels/Zavod/Zavod';
 
 import './App.css'
 import MapWrapper from './panels/Map/MapWrapper';
+import FirstRun from './panels/FirstRun/FirstRun';
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
+	const [activePanel, setActivePanel] = useState('firstRun');
 	const [fetchedUser, setUser] = useState(null);
 	const [zavodId, setZavodId] = useState(null)
   const [selectedElem, selectElem] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
@@ -47,7 +48,8 @@ const App = () => {
 			
 	};
 	return (
-		<View activePanel={activePanel} popout={popout}>
+		<View activePanel={activePanel} popout={popout} >
+			<FirstRun id='firstRun' setActivePanel={setActivePanel}/>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
 			<Persik id='persik' go={go} />
 			<MapWrapper id='map' go={go} selectedElem={selectedElem}/>

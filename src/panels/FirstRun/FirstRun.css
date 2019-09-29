@@ -1,0 +1,22 @@
+﻿.dots {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.actived {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background:#1c7859;
+  margin: 5px 3px;
+}
+
+.not-active {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(202, 202, 204);
+  margin: 7px;
+}

@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, Component } from 'react';
+﻿import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
@@ -43,10 +43,7 @@ const mapStyle = {
 
 
 const MapWrapper = ({ id, go, selectedElem }) => {
-  const [map, setMap] = useState(null)
-  const [places, setPlaces] = useState([])
-  const [myCoords, setCoords] = useState([55.75, 37.57])
-    const [activeTab, setAciveTab] = useState('placemarks')
+  const [activeTab, setAciveTab] = useState('placemarks')
   return (
     <Panel id={id} >
       <PanelHeader left={<PanelHeaderBack onClick={go} data-to="home" />}>Карта</PanelHeader>
